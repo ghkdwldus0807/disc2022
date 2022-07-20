@@ -1,7 +1,7 @@
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>numguess</title>
 </head>
 <body>
@@ -15,7 +15,9 @@ a = []; b = []; c = []
 k = 0
 hint = ""
 while ( true ) {
-  a[k] = prompt(str + a + " " + hint)
+  x = prompt(str + a + " " + hint)
+  if ( x == null) break
+  a[k] = x
   c[k] = num
   b[k] = k+1
   if ( num == a[k] ) {
