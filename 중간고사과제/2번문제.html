@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+mydata = [1,2,3,4,5]
+randomnum = Math.floor(Math.random()*100+1)
+
+for (i=0 ; i< Math.floor(Math.random()*100+1) ; i++){
+  mydata.push(randomnum) 
+  }
+
+mydata.push(mydata.length)
+reducer = (accumulator,curr) => accumulator + curr;
+sumdata = mydata.reduce(reducer)
+average = sumdata/mydata.length
+mydata.push(sumdata)
+mydata.push(average)
+
+alert('number of data :'+mydata.length+'sum of data :'+sumdata+'average of data :'+average)
+</script>
+</head>
+<body>
+</body>
+</html>
