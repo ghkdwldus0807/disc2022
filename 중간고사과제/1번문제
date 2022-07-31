@@ -1,0 +1,29 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1>SQRT10 attempts :</h1>
+<script>
+
+sqrt10try = []
+trialnum = []
+sqrt10val = []
+high = 3
+low = 2
+delta = 0.00000001
+for ( k=0 ; k<100 ; k++ ) {
+  sqrt10try[k] = (high + low)/2
+  sqrx = sqrt10try[k] * sqrt10try[k]*sqrt10try[k]
+  trialnum[k] = k+1
+  sqrt10val[k] = Math.cbrt(10)
+  if ( sqrx > 10 ) high = sqrt10try[k]
+  else if ( sqrx < 10 ) low = sqrt10try[k]
+  if ( Math.abs(10-sqrx) < delta ) break
+}
+document.querySelector("h1").innerHTML += trialnum[k]+"</br> sqrt10 = " + sqrt10try[k]
+
+
+</script>
+</head>
+<body>
+
+</body></html>
