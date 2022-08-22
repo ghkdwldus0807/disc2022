@@ -65,7 +65,7 @@ nav {
   float: left;
   width: 600px;
   height: 50%;
-  background-color: orange;
+  background-color:#EFE7D3;
 }
 #img2 {
   display: block;
@@ -73,7 +73,7 @@ nav {
   width: 210px;
   height:210px; 
   border-radius: 100%;
-  border : 1px solid #ddd;
+  border : 7px solid #493604;
   line-height: 150px;
 }
 
@@ -88,7 +88,25 @@ nav {
   float: left;
   width: 600px;
   height: 50%;
-  background-color: yellow;
+  background-color:#EFE7D3;
+}
+
+#img3 {
+  display: block;
+  margin: 0 auto;
+  width: 210px;
+  height:210px; 
+  border-radius: 100%;
+  border : 7px solid #493604;
+  line-height: 150px;
+}
+
+#tabMenu3 h1{
+  font-family: 'Hahmlet', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #493604;
+  text-align: center;
 }
 
 #tabMenu4 {
