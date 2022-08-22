@@ -67,6 +67,16 @@ nav {
   height: 50%;
   background-color: orange;
 }
+#img2 {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height:200px; 
+  border-radius: 100%;
+  border : 1px solid #ddd;
+  line-height: 150px;
+}
+
 #tabMenu3 {
   float: left;
   width: 600px;
@@ -74,8 +84,7 @@ nav {
   background-color: yellow;
 }
 
-/*퀵링크영역*/
-#links {
+#tabMenu4 {
   float: right;
   width: 600px;
   height: 50%;
@@ -87,4 +96,4 @@ footer{
   width: 100%;
   height: 100px;
   background-color: gray;
-} 
+}
