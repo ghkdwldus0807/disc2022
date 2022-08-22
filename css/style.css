@@ -70,13 +70,20 @@ nav {
 #img2 {
   display: block;
   margin: 0 auto;
-  width: 200px;
-  height:200px; 
+  width: 210px;
+  height:210px; 
   border-radius: 100%;
   border : 1px solid #ddd;
   line-height: 150px;
 }
 
+#tabMenu2 h1{
+  font-family: 'Hahmlet', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #493604;
+  text-align: center;
+}
 #tabMenu3 {
   float: left;
   width: 600px;
@@ -96,4 +103,4 @@ footer{
   width: 100%;
   height: 100px;
   background-color: gray;
-}
+} 
