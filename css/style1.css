@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a { 
+  text-decoration: none;
+}
+
+#container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/*헤더영역*/
+header {
+  width: 100%; 
+  height: 100px;
+  background-color: white;
+}
+
+/*로고영역*/
+#logo{
+  float: left; 
+  width: 300px;
+  height: 100px;
+  line-height: 100px; 
+  padding-left: 30px; /*왼쪽패딩지정*/
+  background-color:#493604;
+ 
+}
+
+#logo h1{
+  font-family: 'Hahmlet', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+}
+
+/*네비게이션영역*/
+nav {
+  float: right;
+  width: 900px;
+  height: 100px;
+  background-color:#EFE7D3;
+}
+
+#introduction h4{
+  vertical-align: bottom;
+  text-align: right;
+  color: #493604
+}
+
+/*진행바영역*/
+
+#progress {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color:#EFE7D3;
+}
+#bar{
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    background-color:#493604;
+}
+
+#label {
+    text-align: center; /* If you want to center it */
+    line-height: 30px; /* Set the line-height to the same as the height of the progress bar container, to center it vertically */
+    color: white;
+}
+/*콘텐츠영역*/
+#quiz {
+  width: 100%;
+  height: 900px;
+}
+
+/*퀴즈및선택지영역*/
+#question {
+  float: left;
+  width: 100%;
+  height: 200px;
+  background-color:#EFE7D3;
+}
+
+#question {
+  font-family: 'Hahmlet', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #493604;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#answer1{
+  
+  float: left;
+  width: 100%;
+  height: 250px;
+  background-color:#EFE7D3;
+}
+
+#answer2 {
+  float: left;
+  width: 100%;
+  height: 250px;
+  background-color:#EFE7D3;
+}
+
+/* 버튼 영역 */
+
+.btn{
+  font-family: 'Hahmlet', serif;
+	background-color:#493604; 
+	color: white; 
+	width: 500px;
+	height: 200px;
+	font-size: 25px;
+	border: 3.5px solid #493604;
+	border-radius: 0px;
+	padding: 30px;
+	transition: 0.5s;
+}
+#btn1 {
+  margin: 50px 350px 0px 350px;
+}
+
+#btn2 {
+  margin: 0px 350px 0px 350px;
+}
+.btn:nth-child(2n){ margin-right: 0; }
+.btn:hover{
+	cursor: pointer;
+	background-color: #FEFFC6; color: black;
+}
+.btn:focus{ outline: 0; }
+
+
+
+
+/*푸터영역*/
+footer{
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #222;
+  
+} 
+
+#bottomMenu {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+#bottomMenu ul {
+  margin-top : 15px;
+}
+
+#bottomMenu ul li {
+  list-style: none;
+  float: left;
+  padding : 5px 20px;
+  border-right: 1px solid #ddd;
+}
+
+#bottomMenu ul li:last-child {
+  border-right: none;
+}
+
+#bottomMenu ul li a, #bottomMenu ul li a: visted {
+  font-size: 15px ;
+  color: #666;
+}
+#sns {
+  position : absolute;
+  left: 250px;
+}
+
+#sns ul li{
+  border: none;
+  
+}
