@@ -3,46 +3,117 @@
 <head>
   <meta charset = "utf-8">
   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-  <title> Jiyeon </title>
+  <title> google Map </title>
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
-  <div id = "container">
-    <header> 
-      <div id = "logo">
-        <a href = "index.html">
-          <h1>커피 맛집 지도 </h1>
-        </a>
-      </div>
-      <nav>
-        <h3> 우리학교 주변 지도사진 올려놓고 아이콘 위에 마우스 커서 가져다놓으면
-        설명 나오게 하기 </h3>
-      </nav>
-    </header>
+    <div id = "container">
+     <header> 
+        <div id = "logo">
+          <a href = "index.html">
+           <h1> My coffee </h1>
+          </a>
+        </div>
+        <nav>
+         <div id = "introduction">
+           <h4> </br></br>지도에 있는 마커를 클릭해보세요!</br>
+           과기대 주변 커피 맛집에 대한 설명이 나와요! </h4>
+          </div>
+       </nav>
+      </header>
+    <div id="map" style="width:100%; height: 100vh;"></div>
+    <div id="block"></div>
+  
+  <script>
+    function initMap() {
+      var seoultech= { lat: 37.6301 ,lng: 127.0779 };
+      var map = new google.maps.Map(
+        document.getElementById('map'), {
+          zoom: 16,
+          center: seoultech
+        
+        });
+        
+         var cafe =  { lat:37.6291, lng:127.0768};
+         var cafe2 =  { lat:37.6253, lng:127.0726};
+         var cafe3=  { lat:37.6296, lng:127.0754};
+         
     
-    <div id = "contents">
-      <div id = "tabMenu">
-      
-      
-      </div>
-      <div id = "tabMenu2">
-       
-      
-      </div>
-      
-      <div id = "tabMenu3">
-      
-      </div>
-      
-      <div id = "tabMenu4">
-      
-      </div>
-      
-    </div>
-    <footer>
+        var marker = new google.maps.Marker({
+         position : cafe,
+          title : '요거프레소',
+          map : map
+          });
+          marker.setMap(map);
+          
+        var marker2 = new google.maps.Marker({
+         position : cafe2,
+          title : '파스쿠찌',
+          map : map
+          });
+        var marker3 = new google.maps.Marker({
+         position : cafe3,
+          title : '유니온 커피로스터',
+          map : map
+          });
+          
+        const contentString = 
+          '<div id = "content">'+
+          '<div id = "siteNotice">'+
+          "</div>"+
+          '<h1 id = "firstHeading" class = "firstHeading"> 요거프레소</h1>'+
+          '<div id = "bodyContent"><p>'+
+          "요거프레소의 커피는 견과류의 고소한 맛과 다크 초콜릿처럼 깊고 진한 풍미가 특징이다.</br> 사용하는 원두는 콜롬비아 수프리모 후일라,콜롬비아 엑셀로 메델린, 브라질 세하도 세가지이다.</p>"+
+          "</div>"+
+          "</div>";
+          
+        const contentString2 = 
+          '<div id = "content">'+
+          '<div id = "siteNotice">'+
+          "</div>"+
+          '<h1 id = "firstHeading" class = "firstHeading"> 파스쿠찌</h1>'+
+          '<div id = "bodyContent"><p>'+
+          "파스쿠찌의 커피는 산미와 풍부한 맛에 더해진 묵직한 바디감이 특징이다.</br> 사용하는 원두는 9가지 타입의 품종을 아라비카 80%, 로브스타 20% 비율로 블렌딩한다.</p>"+
+          "</div>"+
+          "</div>";
+          
+        const contentString3 = 
+          '<div id = "content">'+
+          '<div id = "siteNotice">'+
+          "</div>"+
+          '<h1 id = "firstHeading" class = "firstHeading"> 유니온 커피 로스터</h1>'+
+          '<div id = "bodyContent"><p>'+
+          "유니온 커피 로스터는 시즌마다 다양한 스페셜 티를 사용하는 것이 특징이다.</br> 다양한 원두의 맛을 음미하기 좋은 곳이다.</p>"+
+          "</div>"+
+          "</div>";
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        const infowindow2 = new google.maps.InfoWindow({
+          content: contentString2
+        });
+        
+        const infowindow3 = new google.maps.InfoWindow({
+          content: contentString3
+        });
+        
+      marker.addListener("click",() => {
+        infowindow.open(map,marker);
+        });
+      marker2.addListener("click",() => {
+        infowindow2.open(map,marker2);
+        });
+      marker3.addListener("click",() => {
+        infowindow3.open(map,marker3);
+        });
     
-    </footer>
-  </div>
+      }  
+  </script>
+  
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB17LdQxFc3UyHTro3FTRQ3GsjtpIcGnc&callback=initMap&region=kr"></script>
+
 </body>
 
 </html>
