@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title> Jiyeon </title>
+  <link rel="stylesheet" href="css/introduction.css">
+</head>
+<body>
+  <div id = "container">
+    <header> 
+      <div id = "logo">
+        <a href = "index.html">
+          <h1> My coffee </h1>
+        </a>
+      </div>
+      <nav>
+        <div id = "introduction">
+          <h4> </br></br>다양한 커피의 종류를 소개하는 웹 페이지입니다.</br>
+          자신의 커피 스타일을 찾아가고 과기대 주변 커피 맛집도 알아보아요! </h4>
+        </div>
+      </nav>
+    </header>
+    
+    <div id = "contents">
+    
+      <div id = "main">
+        <div id = "slides">
+          <img class="thumb" src = "image/ethiopia.png" alt="" onclick="lightbox_open(1)"/>
+          <img class="thumb" src = "image/colombia.png" alt="" onclick="lightbox_open(2)"/>
+          <img class="thumb" src = "image/guatemala.png" alt="" onclick="lightbox_open(3)"/>
+          <img class="thumb" src = "image/indo.png" alt="" onclick="lightbox_open(4)"/>
+          <button id = "prev">&lang;</button>
+          <button id = "next">&rang;</button>
+      </div>
+      
+      
+   <!-- 라이트 박스 배경 -->
+<div id="block"></div>
+
+<div id="lightbox">
+	
+	<figure>
+	 
+	  <img src="image/eth.png" class="active" alt="" />
+	  <img src="image/col.png" alt="" />
+	  <img src="image/gua.png" alt="" />
+	  <img src="image/in.png" alt="" />
+	</figure>
+
+	<div class="btn-close" onclick="lightbox_close()">X</div>
+</div><!-- end lightbox -->   
+
+      
+  </div>
+   
+  </div>
+  <script src = "slideshow.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
