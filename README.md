@@ -4,7 +4,6 @@
 <br>
 
 <h3>❤️완성본은 여기서 확인해주세요!</h3>
-<br>
 https://ghkdwldus0807.github.io/disc2022/
 
 <br>
@@ -13,3 +12,6 @@ https://ghkdwldus0807.github.io/disc2022/
 
 <h2>❇️Information</h2>
 <br> html,css,js로만 만든 웹페이지입니다. 요즘 유행하는 성향 Test, 구글지도 api를 이용한 커피 맛집 지도 (현재 만료), 커피의 세부적인 정보를 팝업 형식으로 보여주는 커피소개 page로 구성되어 있습니다. 
+<br>
+<h3>✨회고록</h3>
+<br> html, css, js를 이용하여 만든 저의 첫 웹페이지입니다. js로 원하는 기능을 만드는 것에 어려움이 약간 있었지만 그래도 잘 마무리 한 것 같아 다행입니다..! 다음에는 backend, db같은 지식과 결합해서 더 완성도 높은 web을 구현하고 싶습니다 ㅎㅎ
